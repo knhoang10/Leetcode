@@ -4,7 +4,6 @@ class Solution:
         stack = []
         tempExist = False
         for i in range(len(temperatures)-1, -1, -1):
-            print(stack)
             for j in range(len(stack)-1, -1, -1):
                 if temperatures[i] < temperatures[stack[j]]:
                     stack.append(i)
